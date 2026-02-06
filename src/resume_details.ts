@@ -1,43 +1,55 @@
-export const FIRST_NAME = "My";
-export const FULL_NAME = "My Name";
-export const TAGLINE = "Lorem ipsum dolor sit amet, consectetur adipiscing elit. In dignissim sagittis tristique.";
-export const TAGLINE_SUB = "Mauris ultrices volutpat convallis. Curabitur ac euismod erat.";
+export const FIRST_NAME = "Chris";
+export const FULL_NAME = "Chris Bridges";
+export const TAGLINE = "Software & Systems Engineer";
+export const TAGLINE_SUB = "8+ years of experience building scalable software, optimizing complex algorithms, and leading technical teams.";
 
 export const SOCIALS = {
-  linkedin: "https://www.linkedin.com/in/placeholder/",
-  github: "https://github.com/placeholder",
+  linkedin: "https://www.linkedin.com/in/chrisbridges6",
+  github: "https://github.com/CB9001",
 };
 
 export const ABOUT = [
-  "In in aliquet ipsum, et egestas nunc. Donec non lorem tristique, bibendum felis quis, tempus ante. Fusce rhoncus diam non porttitor blandit. Suspendisse sed elit pharetra, lacinia mauris sit amet, convallis ligula.",
-  "Proin vel leo non nibh dictum posuere. Mauris feugiat erat sit amet est faucibus hendrerit et vitae tellus. Donec lobortis auctor molestie.",
+  "👋 Hello world! I'm Chris, a passionate Software Engineer based in Northern Virginia. I specialize in bridging the gap between complex problems and clean, user-friendly solutions. Whether I'm optimizing low-level algorithms in C++ or architecting scalable cloud-ready microservices in Python, I love the challenge of making systems faster, more reliable, and easier to maintain.",
+  "I believe that great software is built by great teams. In my recent roles, I've transitioned from individual contributor to technical lead, enjoying the opportunity to mentor junior engineers and drive architectural strategy. When I'm not coding, you can find me reverse-engineering retro games, playing volleyball, or experimenting with new recipes. I'm also an avid board gamer and logic puzzle enthusiast who loves exploring the world.",
 ];
 
 export interface Job {
   title: string;
   company: string;
   location: string;
-  date?: string; // Optional because the Intern role didn't have one in your snippet
+  date?: string;
   description: string;
 }
 
 export const EXPERIENCE: Job[] = [
   {
-    title: "Job Position 1",
-    company: "Company 1",
-    location: "Location 1",
+    title: "Lead Systems Engineer",
+    company: "MITRE",
+    location: "McLean, VA",
     date: "June 2018 - Present",
-    description:
-      "Morbi porta mauris vel magna porta, nec viverra augue posuere.",
+    description: "Lead Backend Architect for data-intensive software initiatives. Responsible for designing server-side infrastructure, transitioning legacy monoliths into distributed microservices, and implementing high-performance computing pipelines",
   },
   {
-    title: "Job Position 2",
-    company: "Company 2",
-    location: "Location 2",
-    date: "June 2014 - June 2018",
-    description:
-      "Sed eleifend, velit ut tincidunt posuere, metus lacus semper velit.",
+    title: "Android Developer",
+    company: "Patron Technologies",
+    location: "Washington, DC",
+    date: "July 2017 - Jan 2018",
+    description: "Sole Android developer for a consumer-facing mobile application. Owned the full development lifecycle, including UI/UX implementation, API integration, and release management",
   },
+  {
+    title: "Software Engineering Intern",
+    company: "Wapack Labs",
+    location: "New Boston, NH",
+    date: "May 2017 - Aug 2017",
+    description: "Built automated web scrapers to gather threat intelligence and refactored internal analysis tools for the security operations team",
+  },
+  {
+    title: "STEM Tutor",
+    company: "Student Success Center at Virginia Tech",
+    location: "Blacksburg, VA",
+    date: "Sep 2015 - May 2018",
+    description: "Tutored undergraduate students in core technical subjects including Computer Science, Engineering, Calculus, and Physics. Helped peers master complex algorithmic concepts and improve academic performance",
+  }
 ];
 
 export interface School {
@@ -54,15 +66,44 @@ export const EDUCATION: School[] = [
     school: "Virginia Tech",
     location: "Blacksburg, VA",
     date: "2014 - 2018",
-    details: "Minors in Cybersecurity and Math",
-  },
+    details: "Minors in Cybersecurity and Math"
+  }
 ];
 
 export const SKILLS = [
+  // Languages
   "Python",
-  "Test & Evaluation",
   "C++",
+  "Java",
+  "JavaScript",
+  "SQL",
+  "Bash/Shell",
+
+  // Architecture & Systems
+  "System Design",
+  "Systems Engineering",
+  "Microservices",
+  "REST APIs",
+  "UML/SysML",
+
+  // DevOps & Tools
+  "Docker",
+  "Git",
+  "CI/CD",
+  "Linux",
+  "Automation",
+
+  // Specialized Domains
+  "Cybersecurity",
+  "Reverse Engineering",
+  "Data Science",
   "Web Scraping",
+
+  // Process & Leadership
+  "Agile/Scrum",
+  "Unit Testing",
+  "Technical Writing",
+  "Mentorship"
 ];
 
 export interface Project {
@@ -73,28 +114,28 @@ export interface Project {
 }
 
 export const PROJECTS: Project[] = [
-  {
-    title: "Project #1",
-    tags: "Python, Web Scraping",
-    description:
-      "Donec sit amet luctus lacus. Nam sodales nibh eros, sed porta felis pulvinar vitae.",
-  },
-    {
-    title: "Project #2",
-    tags: "CUDA",
-    description:
-      "Aenean accumsan ex id ex fringilla tristique. Nullam varius elit in pulvinar ultrices.",
-  },  
-  {
-    title: "Project #3",
-    tags: "Pascal, Docker, Java",
-    description:
-      "Vivamus dictum, quam vitae venenatis viverra, mauris urna congue risus, vel bibendum velit ipsum et felis.",
-  },  
-  {
-    title: "Project #4",
-    tags: "C++",
-    description:
-      "Etiam imperdiet nibh et metus ullamcorper posuere.",
-  },
+  // {
+  //   title: "Project #1",
+  //   tags: "Python, Web Scraping",
+  //   description:
+  //     "Donec sit amet luctus lacus. Nam sodales nibh eros, sed porta felis pulvinar vitae.",
+  // },
+  //   {
+  //   title: "Project #2",
+  //   tags: "CUDA",
+  //   description:
+  //     "Aenean accumsan ex id ex fringilla tristique. Nullam varius elit in pulvinar ultrices.",
+  // },  
+  // {
+  //   title: "Project #3",
+  //   tags: "Pascal, Docker, Java",
+  //   description:
+  //     "Vivamus dictum, quam vitae venenatis viverra, mauris urna congue risus, vel bibendum velit ipsum et felis.",
+  // },  
+  // {
+  //   title: "Project #4",
+  //   tags: "C++",
+  //   description:
+  //     "Etiam imperdiet nibh et metus ullamcorper posuere.",
+  // },
 ];
