@@ -210,30 +210,35 @@ import {
           </div>
         </section>
 
-        <section
-          id="portfolio"
-          class="mb-24 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out delay-300"
-        >
-          <h2 class="font-bold text-3xl mb-12 text-gray-900 dark:text-white">
-            Selected Projects
-          </h2>
+        {
+          PROJECTS && PROJECTS.length > 0 && (
+            <section
+              id="portfolio"
+              class="mb-24 animate-on-scroll opacity-0 translate-y-8 transition-all duration-700 ease-out delay-300"
+            >
+              <h2 class="font-bold text-3xl mb-12 text-gray-900 dark:text-white">
+                Selected Projects
+              </h2>
 
-          <div class="grid md:grid-cols-2 gap-8">
-            {
-              PROJECTS.map((project) => (
-                <div class="border border-gray-200 dark:border-zinc-800 rounded-xl p-6 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-500/5 transition bg-white dark:bg-zinc-900/50">
-                  <h3 class="font-bold text-xl mb-2 text-gray-900 dark:text-white">
-                    {project.title}
-                  </h3>
-                  <p class="text-sm text-teal-600 dark:text-teal-400 mb-4 uppercase tracking-tighter font-semibold">
-                    {project.tags}
-                  </p>
-                  <p class="text-gray-600 dark:text-zinc-400 mb-4" set:html={project.description} />
-                </div>
-              ))
-            }
-          </div>
-        </section>
+              <div class="grid md:grid-cols-2 gap-8">
+                {PROJECTS.map((project) => (
+                  <div class="border border-gray-200 dark:border-zinc-800 rounded-xl p-6 hover:border-teal-500/50 hover:shadow-xl hover:shadow-teal-500/5 transition bg-white dark:bg-zinc-900/50">
+                    <h3 class="font-bold text-xl mb-2 text-gray-900 dark:text-white">
+                      {project.title}
+                    </h3>
+                    <p class="text-sm text-teal-600 dark:text-teal-400 mb-4 uppercase tracking-tighter font-semibold">
+                      {project.tags}
+                    </p>
+                    <p
+                      class="text-gray-600 dark:text-zinc-400 mb-4"
+                      set:html={project.description}
+                    />
+                  </div>
+                ))}
+              </div>
+            </section>
+          )
+        }
       </main>
       <Footer />
     </div>
